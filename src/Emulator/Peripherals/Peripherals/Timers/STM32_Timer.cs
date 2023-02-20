@@ -34,6 +34,7 @@ namespace Antmicro.Renode.Peripherals.Timers
                     return;
                 }
                 Limit = autoReloadValue;
+                enableRequested = false;
 
                 for(var i = 0; i < NumberOfCCChannels; ++i)
                 {
